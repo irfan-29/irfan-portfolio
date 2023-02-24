@@ -82,11 +82,10 @@ i{
   font-size: 1.6rem;
 }
 .pro-text{
-  font-weight: 400;
   font-size: 1.05rem;
   color: var(--tertiary-color);
   font-family: 'Comfortaa', cursive;
-  font-weight: 400;
+  font-weight: 500;
 }
 .project-detail{
   justify-content: center;
@@ -147,12 +146,11 @@ i{
   top: 10px;
 }
 .proj-text{
-  font-weight: 900;
   font-size: 1.05rem;
   color: var(--sixth-color);
   margin: 20px;
   font-family: 'Comfortaa', cursive;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 body{
