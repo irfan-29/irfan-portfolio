@@ -84,7 +84,7 @@ i{
 .pro-text{
   font-size: 1.05rem;
   color: var(--tertiary-color);
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 .project-detail{
@@ -146,10 +146,10 @@ i{
   top: 10px;
 }
 .proj-text{
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--sixth-color);
   margin: 20px;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
 
@@ -182,7 +182,8 @@ h2{
 h5{
   color: var(--tertiary-color);
   font-weight: 400;
-  font-family: 'Comfortaa', cursive;
+  /* font-family: 'Comfortaa', cursive; */
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
 }
 a{
@@ -246,16 +247,19 @@ a{
 .img1{
   height: 500px;
   width:auto;
+  filter: drop-shadow(10px 10px 7px #0c1012);
   margin: 0;
   padding: 0;
 }
 .img2{
   width: 420px;
   height: auto;
+  filter: drop-shadow(10px 10px 7px #0c1012);
 }
 .img3{
   width: 450px;
   height: auto;
+  filter: drop-shadow(10px 10px 7px #0c1012);
   padding: 0;
   margin: 0;
 }
