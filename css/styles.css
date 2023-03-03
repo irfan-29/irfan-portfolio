@@ -28,7 +28,7 @@
 .waviy span {
   position: relative;
   display: inline-block;
-  color: #fff;
+  color: var(--tertiary-color);
   letter-spacing: -8px;
   animation: flip 4s infinite;
   animation-delay: calc(.2s * var(--i))
