@@ -329,9 +329,9 @@ a{
   padding-left: 6px;
   width: 75px;
 }
-.download-btn, .contact-btn {
+.download-btn{
   background: var(--secondary-color);
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 22px 70px 4px;
   /* color: var(--tertiary-color); */
   color: black;
   background-color: #ff4c68;
@@ -343,7 +343,7 @@ a{
   position: relative;
   top: 18px;
 }
-.download-btn:hover, .contact-btn:hover {
+.download-btn:hover{
   color: black;
 }
 .contact-btn {
