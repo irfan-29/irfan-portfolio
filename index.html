@@ -298,6 +298,44 @@
 
   <button onclick="topFunction()" id="myBtn" title="Go to Top"><img src="images/arrow.png" style="width: 20px;"></button>
 
+
+  <div class="background-animation" id="background-animation"></div>
+
+  <script>
+      const colors = ['red', 'green', 'blue', 'yellow', 'purple'];
+      const isMobile = window.innerWidth <= 768;
+      const ballCount = isMobile ? 5 : 10;
+      // const ballCount = 10;
+      const container = document.getElementById('background-animation');
+
+      for (let i = 0; i < ballCount; i++) {
+          const ball = document.createElement('div');
+          ball.classList.add('ball', colors[i%5]);
+          container.appendChild(ball);
+          animateBall(ball);
+      }
+      function animateBall(ball) {
+          const duration = Math.random() * 20 + 10; // Random duration between 10s and 30s
+          const size = Math.random() * 6 + 5; // Random size between 5px and 10px
+          ball.style.width = `${size}px`;
+          ball.style.height = `${size}px`;
+
+          const keyframes = [
+              { transform: `translate(${Math.random() * 100}vw, ${Math.random() * 100}vh)` },
+              { transform: `translate(${Math.random() * 100}vw, ${Math.random() * 100}vh)` },
+              { transform: `translate(${Math.random() * 100}vw, ${Math.random() * 100}vh)` },
+              { transform: `translate(${Math.random() * 100}vw, ${Math.random() * 100}vh)` }
+          ];
+          ball.animate(keyframes, {
+              duration: duration * 1000,
+              iterations: Infinity,
+              direction: 'alternate',
+              easing: 'ease-in-out'
+          });
+      }
+  </script>  
+
+
   <script type="text/javascript">
     let mybutton = document.getElementById("myBtn");
     window.onscroll = function() {scrollFunction()};
