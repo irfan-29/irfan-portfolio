@@ -33,10 +33,10 @@
     <label for="toggler"><i class="ri-menu-line"></i></label>
     <div class="menu">
       <ul class="list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="no-target">Home</a></li>
+        <li><a href="#about" class="no-target">About</a></li>
+        <li><a href="#projects" class="no-target">Projects</a></li>
+        <li><a href="#contact" class="no-target">Contact</a></li>
       </ul>
     </div>
 
@@ -69,7 +69,7 @@
   <section id="about">
     <div class="row abt">
       <div class="col-lg-5 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-duration="3000">
-        <img class="img2" src="images/irfan_profile_new.png">
+        <img class="img2" src="images/irfan_profile_new.jpg">
       </div>
       <div class="abt-2 col-lg-7 col-md-12 col-sm-12">
         <div class="waviy" data-aos="zoom-in" data-aos-duration="3000">
@@ -81,7 +81,7 @@
             <span style="--i:5">t</span>
           </h2>
         </div>
-        <h5 data-aos="zoom-in" data-aos-duration="1500">Hey there! I am Mohammed Irfan U, second year Computer Science and Engineering student at <a href="https://www.kct.ac.in/"> Kumaraguru College of Technology<img style="width:22px;" src="images/url.png">.</a> I am a web application developer and likes designing very much. I really likes <a href="https://www.python.org/">Python<img style="width:22px;" src="images/url.png"></a> and 'am currently learning <a href="https://reactjs.org/">React<img style="width:22px;" src="images/url.png">.</a> I have a passion for learning new things and currently working on the project QuizOut.</h5>
+        <h5 data-aos="zoom-in" data-aos-duration="1500">Hey there! I am Mohammed Irfan U, Final year Computer Science and Engineering student at <a href="https://www.kct.ac.in/"> Kumaraguru College of Technology<img style="width:22px;" src="images/url.png">.</a> I am a web application developer and likes designing very much. I really likes <a href="https://www.python.org/">Python<img style="width:22px;" src="images/url.png"></a> and 'am currently learning <a href="https://reactjs.org/">React<img style="width:22px;" src="images/url.png">.</a> I have a passion for learning new things and currently working on the project QuizOut.</h5>
         <p data-aos="zoom-in-up" data-aos-duration="1500"><a class="download-btn" href="Irfan_Resume.pdf" download title="Download my Resume">Resume<img src="images/download.png" data-aos="zoom-in-up" data-aos-duration="1500" style="width: 20px; position: relative; left: 8px; bottom: 1.5px;"></a></p>
       </div>
     </div>
@@ -240,13 +240,23 @@
         </div>
       </div>
 
-      <div class="project col-lg-3 col-md-6 col-sm-12">
+      <!-- <div class="project col-lg-3 col-md-6 col-sm-12">
         <img src="images/quizOut_logo.png" data-aos="zoom-in-up" data-aos-duration="1500" class="proj-img">
         <div class="project-layer">
           <h3 class="proj-title" data-aos="zoom-in-up" data-aos-duration="1500">QuizOut</h3>
           <p class="proj-text" data-aos="zoom-in-up" data-aos-duration="1500">It is to check your knowledge on various basic topics and you can also add custom questions.</p>
           <a href=""><img src="images/github.png" data-aos="zoom-in-up" data-aos-duration="1500" style="width: 30px; margin-right: 45px; margin-top: 4px;"></a>
           <a href=""><img src="images/share.png" data-aos="zoom-in-up" data-aos-duration="1500" style="width: 30px; margin-top: 4px;"></a>
+        </div>
+      </div> -->
+
+      <div class="project col-lg-3 col-md-6 col-sm-12">
+        <img src="images/spg.png" data-aos="zoom-in-up" data-aos-duration="1500" class="proj-img">
+        <div class="project-layer">
+          <h3 class="proj-title" data-aos="zoom-in-up" data-aos-duration="1500">SPG</h3>
+          <p class="proj-text" data-aos="zoom-in-up" data-aos-duration="1500">To generate a strong password based on your preferences, from your details and also randomly.</p>
+          <a href="https://github.com/irfan-29/spg"><img src="images/github.png" data-aos="zoom-in-up" data-aos-duration="1500" style="width: 30px; margin-right: 45px; margin-top: 4px;"></a>
+          <a href="https://spg-umi-apps.netlify.app/"><img src="images/share.png" data-aos="zoom-in-up" data-aos-duration="1500" style="width: 30px; margin-top: 4px;"></a>
         </div>
       </div>
 
@@ -290,7 +300,7 @@
 
     <footer>
       <div class="details">
-        <p class="dett">©2023 umi apps</p>
+        <p class="dett">©<span id="current-year"></span> umi apps</p>
         <p class="dett">Made with <img src="images/heart.png" style="width: 20px;"> by <span class="name-hover">Irfan</span></p>
       </div>
     </footer>
@@ -300,7 +310,7 @@
 
 
   <div class="background-animation" id="background-animation"></div>
-
+  <!-- Background ball animation -->
   <script>
       const colors = ['red', 'green', 'blue', 'yellow', 'purple'];
       const isMobile = window.innerWidth <= 768;
@@ -334,6 +344,21 @@
           });
       }
   </script>  
+
+
+  <script>
+      // Set the current year
+      document.addEventListener('DOMContentLoaded', (event) => {
+            const yearSpan = document.getElementById('current-year');
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+      });
+
+      // Add target="_blank" to all anchor tags excluding the nav bar tags
+      document.querySelectorAll('a:not(.no-target)').forEach(anchor => {
+          anchor.setAttribute('target', '_blank');
+      });
+  </script>
 
 
   <script type="text/javascript">

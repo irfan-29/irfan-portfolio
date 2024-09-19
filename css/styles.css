@@ -367,7 +367,7 @@ a{
   transform: rotate(6deg);
 }
 .img2{
-  width: 380px;
+  width: 370px;
   height: auto;
   filter: drop-shadow(10px 10px 7px #0c1012);
 }
@@ -487,7 +487,7 @@ footer{
     height: 250px;
   }
   .img2{
-    width: 250px;
+    width: 240px;
   }
   .img3{
     width: 280px;
@@ -523,7 +523,7 @@ footer{
     height: 350px;
   }
   .img2{
-    width: 350px;
+    width: 335px;
   }
   .wrapper{
     margin: 0 10%;
@@ -551,7 +551,7 @@ footer{
     height: 420px;
   }
   .img2{
-    width: 380px;
+    width: 360px;
   }
   .wrapper{
     margin: 0 25%;
@@ -569,9 +569,12 @@ footer{
   .con{
     margin: 1% 23%;
   }
+  .abt{
+    padding-top: 30px;
+  }
   .abt-2{
     position: relative;
-    top: 70px;
+    top: 30px;
   }
   .tech-1{
     padding-top: 160px;
